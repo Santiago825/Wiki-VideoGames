@@ -21,7 +21,7 @@ function crearCard(titulo, img, valor) {
 }
 const juegosPrincipal = () => {
 
-    for (let i = 1; i < 10; i++) {
+    for (let i = 1; i < 30; i++) {
         fetch(`https://www.cheapshark.com/api/1.0/games?id=${i}`)
             .then(res => res.json())
             .then(data => {
