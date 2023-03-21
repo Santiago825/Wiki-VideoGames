@@ -19,30 +19,43 @@
     <title>Wiki VideoGames</title>
   </head>
   <body>
-    <div class="container_background" id="container_fondo" >
-        <form class="container_formulario">
-          <h1 >Agregar Comentario</h1>
-          <label for="nombre">Nombre :</label>
-          <input type="text" placeholder="Nombre" id="nombre"/>
-          <label for="Comentario">Comentario :</label>
-          <textarea name="Comenario" id="comentario" id="comentario" cols="30" rows="10" placeholder="Comentario..."></textarea>
+    <div class="container_background" id="container_fondo">
+      <form class="container_formulario">
+        <h1>Agregar Comentario</h1>
+        <label for="nombre">Nombre :</label>
+        <input type="text" placeholder="Nombre" id="nombre" />
+        <label for="Comentario">Comentario :</label>
+        <textarea
+          name="Comenario"
+          id="comentario"
+          id="comentario"
+          cols="30"
+          rows="7"
+          placeholder="Comentario..."
+        ></textarea>
 
-          <a onclick="agregar()">Agregar comentario</a>
-          <a onclick="handleModalClose()">Cerrar</a>
-        </form>
-      </div>
-      <div class="container_background" id="container_fondo_Edit" >
-        <form class="container_formulario">
-          <h1 >Editar Comentario</h1>
-          <label for="nombre">Nombre :</label>
-          <input type="text" placeholder="Nombre" id="nombreEdit"/>
-          <label for="Comentario">Comentario :</label>
-          <textarea name="ComenarioEdit"  id="comentarioEdit" cols="30" rows="10" placeholder="Comentario..."></textarea>
+        <a onclick="agregar()">Agregar comentario</a>
+        <a onclick="handleModalClose()">Cerrar</a>
+      </form>
+    </div>
+    <div class="container_background" id="container_fondo_Edit">
+      <form class="container_formulario">
+        <h1>Editar Comentario</h1>
+        <label for="nombre">Nombre :</label>
+        <input type="text" placeholder="Nombre" id="nombreEdit" />
+        <label for="Comentario">Comentario :</label>
+        <textarea
+          name="ComenarioEdit"
+          id="comentarioEdit"
+          cols="30"
+          rows="6"
+          placeholder="Comentario..."
+        ></textarea>
 
-          <a onclick="editar()">Editar comentario</a>
-          <a onclick="handleModalClose()">Cerrar</a>
-        </form>
-      </div>
+        <a onclick="editar()">Editar comentario</a>
+        <a onclick="handleModalClose()">Cerrar</a>
+      </form>
+    </div>
     <header>
       <nav>
         <div class="title_navbar">
@@ -58,9 +71,9 @@
     </header>
 
     <main>
-      <div class="container_fondo" >
+      <div class="container_fondo">
         <div class="agregar">
-          <a  onclick="handleModal()">Agregar comentario</a>
+          <a onclick="handleModal()">Agregar comentario</a>
         </div>
         <div class="container_table">
           <table id="tabla">
@@ -71,7 +84,7 @@
                 <th>Opciones</th>
               </tr>
             </thead>
-             <tbody id="tbody">
+            <tbody id="tbody">
               <!-- <tr>
                 <td>santiago orjuela sierra</td>
                 <td>
@@ -88,7 +101,7 @@
                   </a>
                 </td>
               </tr> -->
-            </tbody> 
+            </tbody>
           </table>
         </div>
       </div>
@@ -97,6 +110,5 @@
     <script src="./data/comentarios.js"></script>
     <script src="./js/comentario.js"></script>
     <script src="./js/adminComentario.js"></script>
-    
   </body>
 </html>

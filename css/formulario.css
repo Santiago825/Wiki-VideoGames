@@ -17,33 +17,34 @@
   transition: opacity 0.2s ease-out;
 }
 .container_background .container_formulario {
-  position: absolute;
-  width: 400px;
+  width: 30%;
   background-color: rgba(76, 50, 97, 0.774);
   border: 2px solid black;
   padding: 20px;
   display: flex;
+  overflow: auto;
   flex-direction: column;
   border-radius: 5px;
   gap: 10px;
   color: white;
-  box-shadow: -12px -1px 25px 4px rgba(76, 50, 97, 0.774);
+  box-shadow: -12px -1px 25px 4px sombra(rgba(76, 50, 97, 0.774), 10%);
 }
 .container_background .container_formulario h1 {
   padding-bottom: 10px;
   font-family: "Rubik Iso", cursive;
   font-weight: bold;
 }
-.container_background .container_formulario input, .container_background .container_formulario textarea {
-  padding: 10px;
-  border-radius: 10px;
+.container_background .container_formulario input,
+.container_background .container_formulario textarea {
+  padding: 8px;
+  border-radius: redondeo5px;
   outline: none;
   border: 1px solid white;
   resize: none;
 }
 .container_background .container_formulario a {
   padding: 10px;
-  border-radius: 10px;
+  border-radius: redondeo5px;
   text-align: center;
   cursor: pointer;
   background-color: rgba(76, 50, 97, 0.774);
@@ -68,6 +69,7 @@ nav {
 nav .title_navbar {
   color: white;
   font-family: "Rubik Iso", cursive;
+  font-size: 10px;
 }
 nav .menu {
   color: white;
@@ -97,7 +99,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
-  height: 100vh;
 }
 
 .container_fondo {
@@ -123,38 +124,69 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 .container_fondo .container_table table {
   margin-top: 40px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(224, 205, 205);
   border: 1px solid rgb(231, 231, 231);
-  padding: 10px;
   border-radius: 10px;
-  max-width: 1000px;
+  width: 80%;
+  max-width: 80%;
 }
-.container_fondo .container_table table tr td {
-  padding: 0 15px;
+.container_fondo .container_table table thead {
+  height: 60px;
 }
-.container_fondo .container_table table tr td:nth-child(1) {
-  max-width: 170px;
+.container_fondo .container_table table thead tr > th {
+  justify-content: center;
 }
-.container_fondo .container_table table tr td:nth-child(2) {
-  max-width: 700px;
-}
-.container_fondo .container_table table tr td:nth-child(3) {
-  min-width: 100px;
-  max-width: 300px;
-  display: flex;
-  gap: 20px;
+.container_fondo .container_table table tbody tr td {
+  background-color: white;
   padding: 10px;
-  font-size: 25px;
 }
-.container_fondo .container_table table tr td:nth-child(3) a {
+.container_fondo .container_table table tbody tr td:nth-child(3) .contenedor_opc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container_fondo .container_table table tbody tr td:nth-child(3) .contenedor_opc a {
+  flex-direction: column;
+  margin: 10px 10px;
   cursor: pointer;
+  font-size: 30px;
 }
-.container_fondo .container_table table tr td:nth-child(3) a:nth-child(1) {
-  color: rgb(209, 135, 231);
+.container_fondo .container_table table tbody tr td:nth-child(3) .contenedor_opc a:nth-child(1) {
+  color: rgb(230, 147, 233);
 }
-.container_fondo .container_table table tr td:nth-child(3) a:nth-child(2) {
-  color: red;
+.container_fondo .container_table table tbody tr td:nth-child(3) .contenedor_opc a:nth-child(2) {
+  color: rgb(230, 55, 55);
+}
+
+@media screen and (max-width: 640px) {
+  nav {
+    padding: 0px 20px;
+  }
+  nav .title_navbar h1 {
+    font-size: 12px;
+  }
+  nav .menu a {
+    font-size: 10px;
+  }
+  nav .menu a i {
+    font-size: 15px;
+  }
+  .container_background .container_formulario {
+    width: 80%;
+  }
+  .container_fondo {
+    padding: 10px;
+  }
+  .container_fondo .container_table table > tbody > tr > td:nth-child(3) .contenedor_opc {
+    display: flex;
+    flex-direction: column;
+  }
+  .container_fondo .container_table table > tbody > tr > td:nth-child(3) .contenedor_opc a {
+    display: flex;
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=formulario.css.map */

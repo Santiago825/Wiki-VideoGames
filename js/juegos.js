@@ -3,7 +3,7 @@ function crearCard(titulo, img, valor) {
     const containerfondo = document.getElementById("container_fondo");
     const card = document.createElement("div");
     card.classList.add("card")
-    container.appendChild(card)
+    
     const imagenContenedor = document.createElement("div");
     imagenContenedor.classList.add("imagen");
     const imagen = document.createElement("img");
@@ -16,11 +16,12 @@ function crearCard(titulo, img, valor) {
     precio.innerText = valor
     card.appendChild(description);
     card.appendChild(precio)
+    container.appendChild(card)
 
 }
 const juegosPrincipal = () => {
 
-    for (let i = 1; i < 2; i++) {
+    for (let i = 1; i < 10; i++) {
         fetch(`https://www.cheapshark.com/api/1.0/games?id=${i}`)
             .then(res => res.json())
             .then(data => {
