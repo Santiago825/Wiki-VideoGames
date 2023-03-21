@@ -1,0 +1,87 @@
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-image: url("../acces/img/Fondo.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  .info-container {
+    right: 0;
+    background-color: rgba(158, 139, 212, 0.158);
+    padding: 40px 50px;
+    .info-cuadro {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    
+
+        .titulo{
+            margin: 10px 0;
+            background-color: rgb(3, 3, 3);
+            padding: 30px 18px;
+            border-radius: 10px;
+            font-family: 'Rubik Iso', cursive;
+            font-size: 25px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            box-shadow: -2px 26px 29px 10px rgb(99, 3, 99);
+            transition: 0.5s all;
+            &:hover{
+                box-shadow: -2px 26px 29px 10px rgb(235, 113, 235);
+            }
+        }
+        .description{
+         
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            border-radius: 10px;
+            padding: 20px;
+
+            p{
+                text-align: justify;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: bold;
+                color: white;
+                font-size: 20px;
+            }
+            button{
+                padding: 10px;
+                margin-top: 50px;
+                margin-left: 200px;
+                border-radius: 10px;
+                font-size: 20px;
+                font-family: 'Rubik Iso', cursive;
+                background-color: rgb(99, 3, 99);
+                color: white;
+                cursor: pointer;
+                transition: 0.5s all;
+                &:hover{
+                    box-shadow: -2px 2px 36px 4px rgba(0,0,0,0.75);
+
+
+                }
+            }
+        }
+    }
+
+    // div {
+    //   padding: 20px 10px;
+    //   background-color: rgb(243, 236, 236);
+    //   display: flex;
+    //   flex-direction: column;
+    //   border-radius: 20px;
+    //   gap: 50px;
+    // }
+  }
+}

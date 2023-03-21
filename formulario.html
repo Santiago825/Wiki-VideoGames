@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/formulario.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Rubik+Iso&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Wiki VideoGames</title>
+  </head>
+  <body>
+    <div class="container_background" id="container_fondo" >
+        <form class="container_formulario">
+          <h1 >Agregar Comentario</h1>
+          <label for="nombre">Nombre :</label>
+          <input type="text" placeholder="Nombre" id="nombre"/>
+          <label for="Comentario">Comentario :</label>
+          <textarea name="Comenario" id="comentario" id="comentario" cols="30" rows="10" placeholder="Comentario..."></textarea>
+
+          <a onclick="agregar()">Agregar comentario</a>
+          <a onclick="handleModalClose()">Cerrar</a>
+        </form>
+      </div>
+      <div class="container_background" id="container_fondo_Edit" >
+        <form class="container_formulario">
+          <h1 >Editar Comentario</h1>
+          <label for="nombre">Nombre :</label>
+          <input type="text" placeholder="Nombre" id="nombreEdit"/>
+          <label for="Comentario">Comentario :</label>
+          <textarea name="ComenarioEdit"  id="comentarioEdit" cols="30" rows="10" placeholder="Comentario..."></textarea>
+
+          <a onclick="editar()">Editar comentario</a>
+          <a onclick="handleModalClose()">Cerrar</a>
+        </form>
+      </div>
+    <header>
+      <nav>
+        <div class="title_navbar">
+          <h1>Video Games Wiki</h1>
+        </div>
+        <div class="menu">
+          <a href="./index.html"><i class="fa-solid fa-comment"></i>Inicio</a>
+          <a href="./page_games.html"
+            ><i class="fa-solid fa-house"></i>Juegos</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container_fondo" >
+        <div class="agregar">
+          <a  onclick="handleModal()">Agregar comentario</a>
+        </div>
+        <div class="container_table">
+          <table id="tabla">
+            <thead>
+              <tr>
+                <th>Persona</th>
+                <th>Comentario</th>
+                <th>Opciones</th>
+              </tr>
+            </thead>
+             <tbody id="tbody">
+              <!-- <tr>
+                <td>santiago orjuela sierra</td>
+                <td>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Numquam deserunt, hic accusantium commodi, incidunt, beatae
+                  tempora
+                </td>
+                <td>
+                  <a>
+                    <i class="fa-regular fa-pen-to-square"></i>
+                  </a>
+                  <a>
+                    <i class="fa-solid fa-trash"></i>
+                  </a>
+                </td>
+              </tr> -->
+            </tbody> 
+          </table>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./data/comentarios.js"></script>
+    <script src="./js/comentario.js"></script>
+    <script src="./js/adminComentario.js"></script>
+    
+  </body>
+</html>

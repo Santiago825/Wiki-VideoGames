@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/pagePrinciapl.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Rubik+Iso&display=swap" rel="stylesheet">
+    <title>Wiki VideoGames</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="title_navbar">
+          <h1>Video Games Wiki</h1>
+        </div>
+        <div class="menu">
+          <a href="./index.html"><i class="fa-solid fa-comment"></i>Inicio</a>
+          <a href="./formulario.html" ><i class="fa-solid fa-house"></i>Formulario</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container_fondo" id="container_fondo">
+        <div class="barra_Busqueda">
+          <input
+            type="text"
+            placeholder="Buscar"
+            id="buscador"
+            onchange="buscar(this.value)"
+          />
+        </div>
+        <div id="container_cards" class="container_cards">
+          <!-- Card -->
+          <!-- <div class="card">
+            <div class="imagen">
+              <img src="./acces/img/Fondo2.jpg" alt="" />
+            </div>
+  
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos itaque
+              velit doloribus eveniet
+            </p>
+  
+            <span>$5000</span>
+          </div> -->
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/juegos.js"></script>
+  </body>
+</html>
